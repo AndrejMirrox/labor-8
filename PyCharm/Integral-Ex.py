@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 import math
 import sys
+
+
 # Постоянная Эйлера.
 EULER = 0.5772156649015328606
 # Точность вычислений.
@@ -13,11 +15,11 @@ if __name__ == '__main__':
         print("Illegal value of x", file=sys.stderr)
         exit(1)
     a = x
-    S, k = a, 1
+    s, k = a, 1
 # Найти сумму членов ряда.
     while math.fabs(a) > EPS:
         a *= x * k / (k + 1) ** 2
-        S += a
+        s += a
         k += 1
 # Вывести значение функции.
-    print(f"Ei({x}) = {EULER + math.log(math.fabs(x)) + S}")
+    print(f"Ei({x}) = {EULER + math.log(math.fabs(x)) + s}")

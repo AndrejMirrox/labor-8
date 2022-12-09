@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import sys
 
+
 if __name__ == '__main__':
     x = int(input("Сколько кг было соьрано за день? : "))
     if x < 0:

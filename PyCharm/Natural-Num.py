@@ -3,6 +3,7 @@
 import math
 import sys
 
+
 if __name__ == '__main__':
     x = int(input("Введите первое натуральное число: "))
     y = int(input("Введите второе натуральное число: "))
