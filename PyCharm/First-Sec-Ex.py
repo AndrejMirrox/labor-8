@@ -12,8 +12,5 @@ if __name__ == '__main__':
         print("Неверный размер кортежа", file=sys.stderr)
         exit(1)
     # Найти искомую сумму.
-    s = 0
-    for item in A:
-        if abs(item) < 5:
-            s += item
+    s = sum(a for a in A if abs(a) < 5)
     print(s)
